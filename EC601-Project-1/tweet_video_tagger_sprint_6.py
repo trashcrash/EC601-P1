@@ -118,7 +118,7 @@ def analyze_labels_file(path):
     print('\nGenerating a report')
     shot_labels = result.annotation_results[0].shot_label_annotations
     file = open('Label Analysis Result.txt', 'w')
-    file.write('Contents in the video: \n\n')
+    file.write('Probable contents in the video (NOT following the picture order): \n\n')
     for i, shot_label in enumerate(shot_labels):
         label_count += 1
         file.write('    ' + str(label_count) + '\t{}'.format(
