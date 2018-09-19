@@ -89,12 +89,14 @@ def generate_video(output_name, start_number = None):
         if f.readline() == '':
             print("\n***No image is detected in the user's twitter***")
             print("***The video can not be created, terminating the program.***\n")
+            clean_up()
             raise SystemExit()
     print("Conversion completed\n")
     print('****************************************')
     if not os.path.isfile(output_name + '.mp4'):
         print("\n***Failure: No video is detected***\n")
         print('****************************************')
+        clean_up()
         raise SystemExit()
     return output_name
 
