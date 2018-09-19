@@ -16,3 +16,6 @@ I used google videointelligence API. <br/>
 link:<br/>
 https://github.com/GoogleCloudPlatform/google-cloud-python/tree/master/videointelligence<br/>
 Install to your python package directory as /google/cloud/videointelligence
+## 4. Platform
+Based on python 2<br/>
+Run perfectly on Windows 10, not sure how it's like on other platforms. <br/>
