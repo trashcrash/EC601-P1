@@ -18,4 +18,4 @@ https://github.com/GoogleCloudPlatform/google-cloud-python/tree/master/videointe
 Install to your python package directory as /google/cloud/videointelligence
 ## 4. Platform
 Based on python 2<br/>
-Run perfectly on Windows 10, not sure how it's like on other platforms. <br/>
+Run perfectly on Windows 10, should be fine for linux too since no specific Windows commands or packages were used. <br/>
