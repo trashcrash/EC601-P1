@@ -21,10 +21,10 @@ def get_all_tweets(screen_name):
 
     # Twitter Authentication
     
-    consumer_key = "svxnhN3VkCjWUgjKJRGKPXgdc"
-    consumer_secret = "UXHkDdNnit6lFoSPkjdnO6cqU7vgnuwGF084cMLSeTyVO7qdUK"
-    access_token_key = "1038821660881760256-IdR60851sDHPuboGxwrDossQN4Tq8K"
-    access_token_secret = "HkrwZpWXHe0Id8ZkqIOD0Cv9k0B3WdqOxCNzfuHxDL3Q9"
+    consumer_key = ""
+    consumer_secret = ""
+    access_token_key = ""
+    access_token_secret = ""
 
     api = Twitter(
         auth = OAuth(
