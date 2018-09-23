@@ -169,7 +169,7 @@ def clean_up():
     print('****************************************')
     
 if __name__ == '__main__':
-    number_of_tweets = input('Please enter the number of tweets you wish to scan.')
+    number_of_tweets = input('Please enter the number of tweets you wish to scan (max = 200).')
     get_all_tweets("@KimKardashian")
     video_name = generate_video('out', 1)    
     analyze_labels_file(video_name+'.mp4')
