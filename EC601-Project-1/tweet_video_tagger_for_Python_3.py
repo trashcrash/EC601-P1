@@ -17,7 +17,7 @@ FRAMERATE = 0.3
 IMAGE_LIST_NAME = 'tweet_image_list.txt'
 IMAGE_INITIAL_NAME = "twitter_image_"
 
-def get_all_tweets(screen_name):
+def get_all_tweets(screen_name, number_of_tweets):
 
     # Twitter Authentication
     
@@ -35,7 +35,7 @@ def get_all_tweets(screen_name):
 
     # Get an information list of most recent tweets (max = 200)
     
-    new_tweets = api.statuses.user_timeline(screen_name = screen_name, count = 20)
+    new_tweets = api.statuses.user_timeline(screen_name = screen_name, count = number_of_tweets)
 
     # Write tweet objects to txt file. Ref: The example script
 
@@ -169,6 +169,7 @@ def clean_up():
     print('****************************************')
     
 if __name__ == '__main__':
+    number_of_tweets = input('Please enter the number of tweets you wish to scan.')
     get_all_tweets("@KimKardashian")
     video_name = generate_video('out', 1)    
     analyze_labels_file(video_name+'.mp4')
